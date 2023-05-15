@@ -1,0 +1,20 @@
+.contenedor-banner {
+    @include flex-columna;
+    gap: $espacio-chico;
+}
+
+@media (min-width: $tablet) {
+    .contenedor-banner {
+        flex-direction: row;
+        justify-content: center;
+        gap: $espacio-grande;
+    }
+}
+
+.banner-uno, .banner-dos, .banner-tres {
+    @include flex-columna;
+
+    iconify-icon {
+        font-size: $icono-grande;
+    }
+}

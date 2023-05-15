@@ -1,0 +1,44 @@
+.parrafo-contacto {
+    text-align: center;
+    margin: $espacio-medio 0;
+    font-size: $fuente-media
+}
+
+.main-contacto {
+    @include flex-columna;
+    gap: $espacio-medio;
+}
+
+@media (min-width: $tablet) {
+    .main-contacto {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+form {
+    @include flex-columna;
+    gap: $espacio-chico;
+
+    .campos {
+        @include flex-columna;
+    }
+
+    .botones-form {
+        @extend .btn;
+        color: $color-primario;
+        background-color: $color-terciario;
+        font-weight: 700;
+
+        &:hover {
+            background-color: $color-primario;
+            color: $color-terciario;
+        }
+    }
+}
+
+iframe {
+    max-width: 100%;
+}

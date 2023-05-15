@@ -1,0 +1,254 @@
+@charset "UTF-8";
+header {
+    height: 300px;
+}
+.cam {
+  height: 100px;
+}
+#nuevo {
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  margin-left: 80px;
+  display: flex;
+}
+header h1 p{
+  color: red;
+  margin-bottom: 850px;
+  
+}
+h1 {
+  color: red;
+}
+p {
+  text-align: center;
+  color: red;
+  margin-bottom: 40px;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #000;
+  color: #b2b2b2;
+}
+
+.nav-link,
+.navbar-nav .nav-link.active {
+  color: red;
+  margin-right: 250px;
+}
+.nav-link:hover,
+.navbar-nav .nav-link.active:hover {
+  color: white;
+}
+
+.navbar-toggler {
+  background-color: red;
+}
+
+.carousel-item img {
+  height: 250px;
+}
+
+@media (min-width: 768px) {
+  .carousel-item img {
+    height: 70vh;
+  }
+}
+@media (min-width: 992px) {
+  .carousel-item img {
+    height: 80vh;
+  }
+}
+h1, h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.texto-desc {
+  margin-top: 20px;
+}
+
+footer {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .container-redes a {
+  color: red;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+.btn, form .botones-form, .btn-card, .container-opciones label {
+  border: solid 1px #b2b2b2;
+  width: 200px;
+  text-align: center;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+.contenedor-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .contenedor-banner {
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+  }
+}
+
+.banner-uno, .banner-dos, .banner-tres {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.banner-uno iconify-icon, .banner-dos iconify-icon, .banner-tres iconify-icon {
+  font-size: 60px;
+}
+
+.container-opciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .container-opciones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+#vis, #mis, #todos, #sint, #epoxi, #ser, #ser1, .card-ser, .card-ser1, .card-sint, .card-epoxi, .card-mis, .card-vis {
+  display: none;
+}
+
+#mis:checked ~ .container-cards .card-mis,
+#vis:checked ~ .container-cards .card-vis,
+#sint:checked ~ .container-cards .card-sint,
+#epoxi:checked ~ .container-cards .card-epoxi,
+#ser:checked ~ .container-cards .card-ser,
+#ser1:checked ~ .container-cards .card-ser1
+{
+  display: flex;
+}
+
+
+#todos:checked ~ .container-cards .card-todos, #todos:checked ~ .container-cards .card-todos {
+  display: flex;
+}
+
+.container-cards {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.container-opciones label {
+  cursor: pointer;
+  padding: 8px 15px;
+  font-size: 14px;
+}
+.container-opciones label:hover {
+  background-color: red;
+  color: black;
+}
+
+@media (min-width: 768px) {
+  .container-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+}
+@media (min-width: 992px) {
+  .container-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .container-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+
+.btn-card {
+  background-color: black;
+  color: yellow;
+  text-decoration: none;
+}
+.btn-card:hover {
+  background-color: yellow;
+  color: black;
+}
+
+.parrafo-contacto {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 20px;
+}
+
+.main-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .main-contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+form .campos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form .botones-form {
+  color: black;
+  background-color: red;
+  font-weight: 700;
+}
+form .botones-form:hover {
+  background-color: black;
+  color: red;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+

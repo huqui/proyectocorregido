@@ -1,0 +1,85 @@
+.container-opciones {
+    @include flex-columna;
+    gap: $espacio-chico;
+}
+
+@media (min-width: $tablet) {
+    .container-opciones {
+        @include flex-fila-centrado;
+    }
+}
+
+#remeras, #pc, #todos, .card-remeras, .card-pc {
+    display: none;
+}
+
+#remeras:checked ~ .container-cards .card-remeras,
+#pc:checked ~ .container-cards .card-pc {
+    display: flex;
+}
+
+
+#todos {
+    &:checked ~ .container-cards .card-remeras,
+    &:checked ~ .container-cards .card-pc {
+        display: flex;
+    }
+}
+
+
+.container-cards {
+    @include flex-columna;
+    gap: $espacio-medio;
+    margin-top: $espacio-grande;
+}
+
+.container-opciones label {
+    @extend .btn;
+
+    cursor: pointer;
+    padding: 8px 15px;
+    font-size: $fuente-chica;
+
+    &:hover {
+        background-color: $color-terciario;
+        color: $color-primario
+    }
+}
+
+@media (min-width: $tablet) {
+    .container-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: $espacio-chico;
+        justify-items: center;
+    }
+}
+
+@media (min-width: $desktop) {
+    .container-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: $desktopXG) {
+    .container-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.card-body {
+    @include flex-columna;
+    color: $color-primario;
+}
+
+.btn-card {
+    @extend .btn;
+    background-color: $color-primario;
+    color: $color-terciario;
+    text-decoration: none;
+
+    &:hover {
+        background-color: $color-terciario;
+        color: $color-primario;
+    }
+}

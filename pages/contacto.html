@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="contacto, formulario, whatsapp, redes sociales, contactanos">
+    <meta name="description" content="Completa el formulario y haznos llegar todas tus dudas o consultas. Te esperamos">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Contacto | Tienda</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">Productos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../images/painter-gedb637b18_1280.jpg" class="d-block w-100" alt="Pintura">
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/painter-g3a040f0af_1920.jpg" class="d-block w-100" alt="Pintura1">
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/paint-brush-g3e2801564_1280.jpg" class="d-block w-100" alt="Pintura2">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section>
+        <h1>Contáctanos</h1>
+        
+        <p class="parrafo-contacto">Completa tus datos y te contactaremos a la brevedad</p>
+    </section>
+    
+    <main class="main-contacto container">
+        <form>
+            <h3 class="text-center">Tus Datos</h3>
+            <div class="campos">
+                <label for="nombreApellido">Nombre y apellido</label>
+                <input type="text" id="nombreApellido" placeholder="Tu nombre completo" required>
+            </div>
+            <div class="campos">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" placeholder="Tu e-mail" required>
+            </div>
+            <div class="campos">
+                <label for="telf">Número de teléfono</label>
+                <input type="tel" id="telf">
+            </div>
+            <div class="campos">
+                <label for="mensaje">Dejanos tu consulta o mensaje</label>
+                <textarea id="mensaje"></textarea>
+            </div>
+
+            <input type="submit" value="Enviar formulario" class="botones-form">
+            <input type="reset" value="Limpiar" class="botones-form">
+        </form>
+
+        <div class="container-mapa">
+            <h3 class="text-center">¿Donde estamos?</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28487.451926097863!2d-65.18024330566574!3d-26.810309960314058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225fc9fe3d8e6b%3A0x6567a950991ed118!2sDisal%20S.A!5e0!3m2!1ses-419!2sar!4v1683219857196!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+
+    <section>
+        <h2>¿Quieres saber más?</h2>
+
+        <p class="text-center mt-4">No dudes en navegar por nuestro sitio, mirar los productos, y por supuesto <a href="pages/contacto.html">contactarte con nosotros</a></p>
+    </section>
+
+    <footer>
+        <h3>Síguenos en nuestras redes sociales</h3>
+
+        <div class="container-redes">
+            <a href="#" target="_blank">
+                <iconify-icon icon="mdi:instagram"></iconify-icon>
+            </a>
+
+            <a href="#" target="_blank">
+                <iconify-icon icon="uil:facebook"></iconify-icon>
+            </a>
+
+            <a href="#" target="_blank">
+                <iconify-icon icon="ic:baseline-whatsapp"></iconify-icon>
+            </a>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+
+</body>
+</html>
